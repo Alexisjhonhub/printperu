@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('background-grid.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 3em;
+    letter-spacing: 0.1em;
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.category:hover {
+    transform: scale(1.1);
+}
+
+.category img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.category p {
+    font-size: 1.2em;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
