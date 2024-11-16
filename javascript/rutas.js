@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     categories.forEach((category, index) => {
         category.addEventListener("click", () => {
-            // Redirige al usuario a la vista correspondiente
             window.location.href = routes[index];
         });
     });
