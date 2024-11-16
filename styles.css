@@ -1,76 +1,98 @@
-body {
+/* General Reset */
+body, html {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: black;
-    color: white;
-    text-align: center;
+    height: 100%;
 }
 
-.container {
+/* Contenedor de partículas */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Las partículas estarán detrás del contenido */
+}
+
+/* Fondo */
+.background {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Overlay */
+.overlay {
+    background-color: rgba(17, 11, 16, 0.897); /* Fondo oscuro con transparencia */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenido principal */
+.content {
     position: relative;
-    min-height: 100vh;
+    z-index: 2; /* Asegura que el contenido esté por encima de las partículas */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url('background-grid.png') no-repeat center center fixed;
-    background-size: cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
 }
-
-h1 {
-    font-size: 3em;
+/* Títulos */
+.content h1 {
+    font-size: 3.2em;
+    margin-bottom: 15px;
     letter-spacing: 0.1em;
+    color: #0e0403;
 }
 
-h2 {
-    margin-top: 10px;
-    font-size: 1.5em;
-    letter-spacing: 0.05em;
+.content h2 {
+    font-size: 1.8em;
+    margin-bottom: 40px;
 }
 
+/* Categorías */
 .categories {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin: 30px 0;
+    gap: 40px;
+    justify-content: center;
+    margin: 0 auto;
 }
 
+/* Estilo para las categorías */
 .category {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
+    justify-content: center;
+    padding: 25px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
     transition: transform 0.3s ease;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .category:hover {
     transform: scale(1.1);
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .category img {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     margin-bottom: 10px;
 }
 
 .category p {
+    margin: 0;
     font-size: 1.2em;
-}
-
-.social-icons {
-    margin-top: 20px;
-}
-
-.social-icons a img {
-    width: 40px;
-    height: 40px;
-    margin: 0 10px;
-    transition: transform 0.3s ease;
-}
-
-.social-icons a img:hover {
-    transform: scale(1.2);
+    font-weight: bold;
 }
