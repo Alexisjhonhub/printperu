@@ -1,0 +1,42 @@
+#content-box {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+#content-box h1 {
+    margin: 0 0 10px;
+    font-size: 2rem;
+}
+
+#content-box p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+#content-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: left;
+}
+
+#content-box ul li {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+#content-box ul li::before {
+    content: "• ";
+    color: #ffdd57;
+    font-size: 1.2rem;
+    margin-right: 5px;
+}

@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
         "views/impresiones.html",       
         "views/impresion_digital.html",
         "views/impresion_textil.html",
-        "views/ayuda.html",
-        "views/personalizados.html",
-        "views/moldes_3d.html"
+        "views/Diseño_grafico.html",
+        "views/Merchandinsing.html",
+        "views/Diseño_3D.html"
     ];
 
     categories.forEach((category, index) => {
