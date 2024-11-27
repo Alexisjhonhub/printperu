@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C&S PRINT PERÚ - Asesor Virtual</title>
+  <link rel="stylesheet" href="css/chatbot.css">
+</head>
+<body>
+
+  <div class="background-overlay"></div>
+
+  <div class="contenedor">
+    <button class="regresar-btn" onclick="window.location.href='index.html'">Regresar</button>
+    <h1>C&S PRINT PERÚ - Asesor Virtual</h1>
+    <div class="chat" id="resultadoConsulta">Esperando tu consulta...</div>
+    <textarea id="consulta" placeholder="Escribe tu consulta aquí..."></textarea>
+    <button type="button" id="botonConsulta">Consultar</button>
+    <div class="footer">C&S PRINT PERÚ © 2024</div>
+  </div>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "@google/generative-ai": "https://esm.run/@google/generative-ai"
+      }
+    }
+  </script>
+  <script type="module" src="javascript/chatbot.js"></script>
+</body>
+</html>
